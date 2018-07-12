@@ -1,6 +1,5 @@
-﻿// Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the 
-// Microsoft Software License Terms for Microsoft Quantum Development Kit Libraries 
-// and Samples. See LICENSE in the project root for license information.
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 
 using System;
 using Microsoft.Quantum.Simulation.Simulators;
@@ -52,7 +51,7 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
             }
 
             // Repeat Shor's algorithm multiple times as the algorithm is 
-            // probabilistic and there are several ways how it can fail.
+            // probabilistic and there are several ways that it can fail.
             for (int i = 0; i < nTrials; ++i)
             {
                 try
@@ -75,10 +74,9 @@ namespace Microsoft.Quantum.Samples.IntegerFactorization
                 }
                 // Shor's algorithm is a probabilistic algorithm and can fail with certain 
                 // probability in several ways. For more details see Shor.qs.
-                // If the run of Shor's algorithm fails is throws ExecutionFailException.
-                // However, dues to the use of System.Task in .Run method,
-                // the exception of interest is 
-                // getting wrapped into AggregateException. 
+                // If the run of Shor's algorithm fails it throws ExecutionFailException.
+                // However, due to the use of System.Task in .Run method,
+                // the exception of interest is getting wrapped into AggregateException.
                 catch (AggregateException e )
                 {
                     // Report the failure of the algorithm to standard output 

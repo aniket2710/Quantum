@@ -3,7 +3,7 @@
 Welcome to the Microsoft Quantum Development Kit!
 This repository contains the libraries and samples provided with the Quantum Development Kit:
 
-- **[Docs/](./Docs)**: Additional documentation for developing on the the libraries and samples.
+- **[Docs/](./Docs)**: Additional documentation for developing on the libraries and samples. Please see [QDK online documentation](https://docs.microsoft.com/quantum/) for online documentation. 
 - **[LibraryTests/](./LibraryTests)**: Tests to ensure correctness of the libraries and samples.
 - **[Microsoft.Quantum.Canon/](./Microsoft.Quantum.Canon)**: Q# sources used to implement [the canon](https://docs.microsoft.com/quantum/libraries/intro) portion of the Q# standard library.
 - **[Samples/](./Samples)**: C# and F# projects demonstrating how to use Q#, the prelude, and the canon.
@@ -23,8 +23,14 @@ Please see the [installation guide](https://docs.microsoft.com/quantum/quantum-i
 
 | branch | status    |
 |--------|-----------|
-| master | <img src="https://quarcsw.visualstudio.com/_apis/public/build/definitions/e24b496e-28f8-4c92-a4f0-a646f968a85a/21/badge"/> |
+| master | [![Build Status](https://travis-ci.org/Microsoft/Quantum.svg?branch=master)](https://travis-ci.org/Microsoft/Quantum) |
 
+
+## Feedback ##
+
+We are collecting feedback for the entire Microsoft Quantum Development Kit
+at [user voice](https://quantum.uservoice.com/). Please leave your suggestions,
+requests and bugs (or praises!) there.
 
 
 ## Contributing ##
